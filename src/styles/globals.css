@@ -13,16 +13,10 @@
   --color-primary: #000000;
   --color-accent: #1a1a1a;
 
-  /* ---------- Semantic Colors ---------- */
-  --color-success: #2d5a27;
-  --color-warning: #b38b00;
-  --color-error: #a30000;
-  --color-info: #004a77;
-
-  /* ---------- Aesthetic Palette: Beige & Black ---------- */
-  --color-background: #f5f2ed;
-  --color-background-secondary: #ede9e1;
-  --color-background-tertiary: #e3de0;
+  /* ---------- Aesthetic Palette: Darker Beige & Black ---------- */
+  --color-background: #e7e3da;
+  --color-background-secondary: #dfdbd1;
+  --color-background-tertiary: #d7d2c8;
 
   /* ---------- Text Colors ---------- */
   --color-text-primary: #000000;
@@ -30,7 +24,7 @@
   --color-text-tertiary: #525252;
 
   /* ---------- Borders ---------- */
-  --color-border: #dcd7cc;
+  --color-border: #cdc9be;
   --color-border-strong: #000000;
 
   /* ---------- Custom Fonts ---------- */
