@@ -1,1 +1,97 @@
+/* ================================
+   Google Fonts Link
+================================ */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Instrument+Sans:wght@400;600&family=Syne:wght@700;800&display=swap");
+
 @import "tailwindcss";
+
+/* ================================
+   THEME TOKENS
+================================ */
+@theme {
+  /* ---------- Brand Colors ---------- */
+  --color-primary: #000000;
+  --color-accent: #1a1a1a;
+
+  /* ---------- Semantic Colors ---------- */
+  --color-success: #2d5a27;
+  --color-warning: #b38b00;
+  --color-error: #a30000;
+  --color-info: #004a77;
+
+  /* ---------- Aesthetic Palette: Beige & Black ---------- */
+  --color-background: #f5f2ed;
+  --color-background-secondary: #ede9e1;
+  --color-background-tertiary: #e3de0;
+
+  /* ---------- Text Colors ---------- */
+  --color-text-primary: #000000;
+  --color-text-secondary: #262626;
+  --color-text-tertiary: #525252;
+
+  /* ---------- Borders ---------- */
+  --color-border: #dcd7cc;
+  --color-border-strong: #000000;
+
+  /* ---------- Custom Fonts ---------- */
+  --font-heading: "Outfit", sans-serif;
+  --font-body: "Instrument Sans", sans-serif;
+  --font-accent: "Syne", sans-serif;
+
+  /* Mapping standard tailwind fonts */
+  --font-sans: "Instrument Sans", system-ui, sans-serif;
+  --font-display: "Outfit", sans-serif;
+}
+
+/* ================================
+   Base Styles
+================================ */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+  }
+
+  ::selection {
+    background-color: var(--color-primary);
+    color: var(--color-background);
+  }
+}
+
+/* ================================
+   Utility Styles
+================================ */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .border-b-black {
+    border-bottom: 2px solid #000000;
+  }
+
+  .custom-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}
